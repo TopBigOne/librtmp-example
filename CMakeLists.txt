@@ -8,6 +8,8 @@ set(SOURCE_FILES2 send_flv_over_rtmp.c)
 
 include_directories(${PROJECT_SOURCE_DIR}/deps "/usr/local/include")
 
+add_subdirectory(librtmp)
+
 link_directories("/usr/local/lib")
 
 #add_executable(rtmp_receive ${SOURCE_FILES1})
