@@ -13,7 +13,7 @@
 
 #include "librtmp/rtmp_sys.h"
 #include "librtmp/log.h"
-#include "lwlog/lwlog.h"
+#include "deps/lwlog/lwlog.h"
 
 #define HTON16(x)  ((x>>8&0xff)|(x<<8&0xff00))
 #define HTON24(x)  ((x>>16&0xff)|(x<<16&0xff0000)|(x&0xff00))

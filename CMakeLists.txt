@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.4)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
 
 project(librtmp_example)
 
@@ -17,5 +17,5 @@ add_executable(send_flv_over_rtmp ${SOURCE_FILES2})
 #add_executable(send_h264_over_rtmp ${SOURCE_FILES3})
 
 #target_link_libraries(rtmp_receive "librtmp.a")
-target_link_libraries(send_flv_over_rtmp "librtmp.a")
+target_link_libraries(send_flv_over_rtmp gy_rtmp)
 #target_link_libraries(send_h264_over_rtmp "librtmp.a")
